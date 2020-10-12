@@ -1,0 +1,6 @@
+SCRIPT data_write{
+SaveData("bus_5.csv",CSVColHeader,BUS,[BusNum,BusLoadMW,BusLoadMVR,BusG,BusB,AreaNum,BusPUVolt,BusAngle,BusNomVolt,ZoneNum],[]);
+SaveData("branch_5.csv",CSVColHeader,BRANCH,[BusName,BusName:1,LineR,LineX,LineC,LineAMVA,LineAMVA:1,LineAMVA:2,LineTap,LinePhase],[]);
+SaveData("gen_5.csv",CSVColHeader,GEN,[BusNum,GenMW,GenMVR,GenMVRMax,GenMVRMin,BusPUVolt,GenMVABase,GenMWMax,GenMWMin,GenMWRampLimit,GenParFac],[]);
+SaveData("gencost_5.csv",CSVColHeader,GEN,[GenCostCurvePoints, GenCostModel, GenCostMultiplier,GenExtraFuelCost,GenExtraOMCost,GenFixedCost,GenFuelCost,GenMCost,GenICost],[]);
+}
