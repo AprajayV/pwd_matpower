@@ -1,0 +1,6 @@
+function [mpc_gen] = get_gen_mpc(csv_file)
+mpc_gen_read = csvread(csv_file,2);
+mpc_gen = [mpc_gen_read(:,1:7),ones(size(mpc_gen_read,1),1),mpc_gen_read( ...
+:,8:9), zeros(size(mpc_gen_read,1),6),mpc_gen_read(:,10),zeros(size ...
+(mpc_gen_read,1),3),mpc_gen_read(:,11)];
+end
