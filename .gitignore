@@ -1,1 +1,5 @@
 *.asv
+*.csv
+gen_data.aux
+line_monitoring.aux
+*.swp
